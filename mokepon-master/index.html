@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokepon</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section id="seleccionar-mascota">
+       <h1 class="titulo">Mokepon</h1>
+      <h2 class="subtitulo">Elige tu Mascota ⤵</h2>
+      <div id= "contenedor-tarjetas" class="tarjetas">
+        
+        
+      </div>
+      <button id="boton-mascota" type="button">SELECCIONAR</button>
+    </section>
+
+    <section id="pantalla-ataque">
+      <div class="batallas">
+        <div class="jugador">
+          <h3>Jugador</h3>
+          <span id="mascota-jugador">???</span>
+          <div id="vidas-jugador">
+            <img src="./assets/icons8-me-gusta-32 (1).png">
+            <img src="./assets/icons8-me-gusta-32 (1).png">
+            <img src="./assets/icons8-me-gusta-32 (1).png">
+          </div>
+        </div>
+
+        <span>Vs</span>
+
+        <div class="rival">
+          <h3>Rival</h3>
+          <span id="mascota-enemigo">???</span>
+          <div id="vidas-enemigo">
+            <img src="./assets/icons8-me-gusta-32.png">
+            <img src="./assets/icons8-me-gusta-32.png">
+            <img src="./assets/icons8-me-gusta-32.png">
+          </div>
+        </div>
+      </div>
+
+      <section id="seleccionar-ataque">
+        <h4>Elegí tu ataque⤵</h4>
+        <div id ="contenedor-ataques" class="botones-ataques">
+          
+        </div>
+      </section>
+
+      <section id="mensajes"></section>
+
+      <section id="reiniciar">
+        <button id="boton-reiniciar">Reiniciar Juego</button>
+      </section>
+    </section>
+
+    <script src="./js/mokepon.js"></script>
+</body>
+</html>
