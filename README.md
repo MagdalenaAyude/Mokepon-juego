@@ -7,6 +7,7 @@ Consiste en elegir un Mokepon, moverte por el mapa y enfrentarte a enemigos en c
 🔗 Demo:
 
 https://mokepon-magdalena.netlify.app/
+
 ---
 
 🎮 Cómo jugar
