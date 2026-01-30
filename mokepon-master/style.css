@@ -39,14 +39,13 @@ body {
   font-size: 30px;
   text-align: center;
 }
-.tarjetas {
-  font-family: "press start 2p", cursive;
+#contenedor-tarjetas {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 0px 90px;
   justify-items: center;
-  margin: 0 auto;
 }
+
 .tarjeta-mokepon {
   width: 100%;
   height: 150px;
@@ -66,8 +65,8 @@ body {
   object-fit: contain;
 }
 .tarjeta-mokepon p {
-  font-family: "poppins", sans-serif;
-  font-size: 20px;
+  font-family: "press start 2p", cursive;
+  font-size: 10px;
   color: black;
   margin: 0;
 }
@@ -91,26 +90,21 @@ input:checked + label {
 #boton-mascota {
   margin-top: 25px;
 }
-
 #reiniciar {
   margin-top: 30px;
 }
-
-
-  #boton-mascota:hover{
+#boton-mascota:hover{
   box-shadow: 0 0 20px orange;
 }
 
-  #boton-reiniciar:hover{
+#boton-reiniciar:hover{
   box-shadow: 0 0 20px orange;
 }
-
- #pantalla-ataque {
+#pantalla-ataque {
   display: flex;
   flex-direction: column;
   align-items: center;
 }   
-
 .batallas {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -121,7 +115,6 @@ input:checked + label {
   margin: 0 auto;
   padding: 20px;
 }
-
 .jugador, .rival {
   display: flex;
   flex-direction: column;
@@ -129,31 +122,50 @@ input:checked + label {
   font-size: 10px;
   font-family: "popins", sans-serif;
 }
-
 #mascota-jugador,
 #mascota-enemigo {
   font-size: 14px;
   font-family: "press start 2p", cursive;
-
+}
+#ver-mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+ }
+ #ver-mapa h2 {
+  font-family: "poppins", sans-serif;
+  font-size: 30px;
+  padding: 20px;
+ }
+#mapa {
+  width: 900px;
+  height: 400px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 14px;
+  box-shadow: 3px 3px 0 #222;
 }
 .batallas > span {
   font-size: 20px;
   font-family: "press start 2p", cursive;
 }
-
 #vidas-jugador,
 #vidas-enemigo {
  margin-top: 10px;
-  
 }
 #vidas-jugador img,
 #vidas-enemigo img {
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .perdido {
   opacity: 0.3;
   transform: scale(0.8);
+}
+#pantalla-ataque h1 {
+  padding: 20px;
+  font-family: "popiins", sans-serif;
+  font-size: 30px;
 }
 #seleccionar-ataque {
   display: flex;
@@ -163,17 +175,19 @@ input:checked + label {
   font-family: "press start 2p", cursive;
   font-size: 20px;
 }
+#contenedor-ataques {
+  display: flex;
+  gap: 16px;
+}
 .botones-ataques button{
   background-color: transparent;
   border-radius: 20px;
   cursor: pointer;
   padding: 13px 14px;
-   font-size: 17px;
-   font-family: "poppins", sans-serif;
- 
-  
+  font-size: 17px;
+  font-family: "poppins", sans-serif;
 }
-#boton-ataque, #boton-fuego, #boton-agua, #boton-tierra {
+ #boton-ataque, #boton-fuego, #boton-agua, #boton-tierra {
   box-shadow: 0 0 0 #222;
   background-color: transparent;
   border-radius: 20px;
@@ -181,8 +195,7 @@ input:checked + label {
   padding: 13px 14px;
   font-size: 17px;
   font-family: "poppins", sans-serif;
-  
-}
+ }
 #boton-mascota,
 #boton-reiniciar,
 #boton-fuego:active,
@@ -226,78 +239,14 @@ input:checked + label {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
- 
- 
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 600px) {
   .batallas {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
     gap: 20px;
   }
-
-  .batallas > span {
-    order: 2;
+  #mapa {
+    width: 400px;
+    height: 300px;
   }
 }
 
